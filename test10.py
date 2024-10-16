@@ -1,4 +1,5 @@
 # №1
+from itertools import count
 
 # string = input()
 #
@@ -57,47 +58,45 @@
 #     print(result)
 
 # №4
-
-string = input().split(" ")
-
-# manager1 = int(string[0])
-# manager2 = int(string[1])
-# manager3 = int(string[2])
+#
+# string = input().split(" ")
+#
+# number = []
+# volume_all = []
+# for i in string:
+#     volume_all.append(int(i))
+# premia = 200
+# max_volume = 0
 #
 # for i in string:
-# #     zp_all.append(int(i))
-# # zp_all.sort(reverse=True)
-# # print(zp_all[0])
-
-base = 200
-percent = 0
-premiya = 0
-
-status = 0
-if (int(string[0]) > int(string[1]) > int(string[2])
-        or int(string[0]) > int(string[2]) > int(string[1])):
-    status = 0
-if (int(string[1]) > int(string[2]) > int(string[0])
-        or int(string[1]) > int(string[0]) > int(string[2])):
-    status = 1
-if (int(string[2]) > int(string[1]) > int(string[0])
-        or int(string[2]) > int(string[0]) > int(string[1])):
-    status = 2
-
-k = 0
-for i in string:
-    zp = int(i)
-    if 0 < zp < 500:
-        percent = 0.03
-    elif zp <= zp < 1000:
-        percent = 0.05
-    elif zp >= 1000:
-        percent = 0.08
-
-    if k == status:
-        premiya += 200
-        print("Менеджер №:" ,k+1, ", ", base * (1 + percent) + premiya)
-    else:
-        print("Менеджер №:" ,k+1, ", ", base * (1 + percent))
-    k += 1
+#     volume = int(i)
+#     zp = 200
+#     max_volume = max(premia, volume)
+#     if 0 < volume < 500:
+#         zp *= 1.03
+#     elif 500 <= volume <= 1000:
+#         zp *= 1.05
+#     elif volume > 1000:
+#         zp *= 1.08
+#     # print(zp)
+#     number.append(zp)
+#     # print(number)
+#
+# count_max = 0
+# for i in string:
+#     max_volume = max(volume_all)
+#     if max_volume == int(i):
+#         count_max += 1
+#
+# print(count_max)
+#
+# k = 0
+# for i in string:
+#     max_volume = max(volume_all)
+#     print(max_volume)
+#     if max_volume == int(i):
+#         print("макс объём", i)
+#         number[k] += premia / count_max
+#     k += 1
+# print(number)
 
