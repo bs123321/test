@@ -43,3 +43,6 @@
 # print(positive, negative, null)
 # print(min(spisok))
 # print(min(spisok))
+
+
+
